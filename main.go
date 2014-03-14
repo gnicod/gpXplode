@@ -89,7 +89,7 @@ func (slice GpxWpts) Swap(i, j int) {
 var gpxFiles []string
 
 func main() {
-	outputFolder := flag.String("output", "./", "Folder where the gpx files will be create")
+	outputFolder := flag.String("output", "./", "Folder where the gpx files will be created")
 	flag.Parse()
 
 	stat, err := os.Stat(*outputFolder)
